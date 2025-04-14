@@ -7,6 +7,10 @@
     <style>
         #task{
             width: 300px;
+            border: 2px solid lightgrey;
+            border-radius: 5px;
+            padding: 5px;
+            outline: #fff;
         }
         #todo{
             display: flex;
@@ -21,12 +25,16 @@
             padding: 4px 8px;
             border-radius: 5px;
         }
+        #add:hover{
+            cursor: pointer;
+            background-color: #4d02fd;
+        }
         .container{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: start;
-            width: 800px;
+            width: 1000px;
             gap: 10px;
             border: 2px solid lightgrey;
             border-radius: 8px;
@@ -37,23 +45,32 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            width: 500px;
+            width: 800px;
             background-color: rgb(6, 158, 246);
             color: #fff;
             border-radius: 10px;
         }
         #itemslist > P{
             padding-left: 8px;
+            width: 800px;
         }
+        #btns{
+                width: 180px;
+                text-align: end;
+            }
         #btns > button{
             border-radius: 5px;
             margin-right: 5px;
             border: none;
             font-style: italic;
+            background-color: rgb(2, 0, 12);
+            color:#fff;
+            cursor: pointer;
         }
         @media screen and (max-width:480px ){
             #task{
                 width: 150px;
+                padding: 2.5px;
             }
             #add{
             padding: 2px 4px;
@@ -68,8 +85,8 @@
                 width: 350px;
                 font-size: 12px;
             }
-            #btns{
-                width: 100px;
+            #itemslist > p{
+                width: 350px;
             }
             #btns > button{
                 font-size: 10px;
@@ -81,7 +98,7 @@
 <body>
     <div id="todo">
     <div class="container">
-    <h2>Things to Do</h2>
+    <h2>Tasks To Do</h2>
     <div>
     <input type="text" placeholder="Enter Your Task" id="task" >
     <button id="add">ADD</button> </div>

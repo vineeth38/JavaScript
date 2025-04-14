@@ -54,6 +54,7 @@ window.addEventListener("DOMContentLoaded",(value1)=>{
         let chngTask = prompt("Change the Task")
         if(chngTask.trim()!==null && chngTask.trim()!==""){
         item.innerText=chngTask;
+        alert('temporarily changed we are working on permanent change as well soon it gets completed');
     } })
 })
     });
@@ -90,5 +91,6 @@ function addTask(){
         let chngTask = prompt("Change the Task")
         if(chngTask.trim()!==null && chngTask.trim()!==""){
         item.innerText=chngTask;
+        alert('temporarily changed we are working on permanent change as well soon it gets completed');
     } })
 }
